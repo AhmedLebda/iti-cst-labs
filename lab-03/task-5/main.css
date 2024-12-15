@@ -1,0 +1,87 @@
+/* General Styles */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+
+img {
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+  display: block;
+}
+
+.text-brown {
+  color: brown;
+}
+.text-green {
+  color: green;
+}
+
+.main_wrapper {
+  max-width: 1080px;
+  margin: 2rem auto;
+}
+
+header {
+  text-align: center;
+  padding-block: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 3px dotted black;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: green;
+}
+
+header h1 {
+  margin-bottom: 1rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding-block: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 3px dotted black;
+}
+
+.bird_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.bird_card h3 {
+  color: green;
+}
+
+.bird_card p {
+  color: brown;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  font-weight: bold;
+  font-family: serif;
+  font-style: italic;
+}
+
+footer p {
+  font-size: 30px;
+  color: green;
+  margin-bottom: 1rem;
+}
+
+footer span {
+  font-size: 20px;
+}

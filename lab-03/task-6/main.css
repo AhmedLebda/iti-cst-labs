@@ -1,0 +1,121 @@
+/* Global Styles */
+:root {
+  --primary-color: #00c1dd;
+  --dark-bg: #2a2a2a;
+  --darker-bg: #1a1a1a;
+  --text-color: #ffffff;
+  --border-color: #3a3a3a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--darker-bg);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Pricing Container */
+.pricing-container {
+  display: flex;
+  gap: 2px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--border-color);
+}
+
+/* Pricing Boxes */
+.pricing-box {
+  background-color: var(--dark-bg);
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Headers */
+.header {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 10px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.choose {
+  height: 133px;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Prices */
+.price {
+  font-size: 2rem;
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.price span {
+  display: block;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Features List */
+.features {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  padding: 15px;
+  border-bottom: 1px solid var(--border-color);
+  text-align: center;
+}
+
+/* Footer */
+.price-footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.monthly-price {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.monthly-price span {
+  display: block;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Button */
+.sign-up {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: background-color 0.3s ease;
+}
+
+.sign-up:hover {
+  background-color: #00a8c1;
+}

@@ -1,0 +1,25 @@
+body {
+  min-height: 100vh;
+}
+
+form {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+legend {
+  font-weight: bold;
+}
+
+p {
+  padding: 2rem;
+}

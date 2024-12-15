@@ -1,0 +1,28 @@
+body {
+  min-height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  min-width: 150px;
+}
+legend {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+p {
+  padding: 2rem;
+  font-size: 1.3rem;
+}

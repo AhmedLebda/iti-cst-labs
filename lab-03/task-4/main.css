@@ -1,0 +1,49 @@
+/* General Styles */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  display: block;
+  border-radius: 50%;
+}
+
+main {
+  max-width: 980px;
+  margin: 3rem auto;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-bottom: 1px solid gray;
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card_content h2 {
+  color: skyblue;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  margin-left: auto;
+  cursor: pointer;
+}

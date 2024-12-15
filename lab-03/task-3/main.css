@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+
+button {
+  padding: 0.8rem 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 3px;
+}
+
+input {
+  padding: 0.8rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+input[type="checkbox"] {
+  width: 13%;
+}
+
+.bg-blue {
+  background-color: #3b5999;
+}
+
+.bg-lightblue {
+  background-color: #01afee;
+}
+
+main {
+  max-width: 520px;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+.social > button {
+  flex: 1;
+}
+
+.separator {
+  background-color: gray;
+  padding: 0.7rem 0.8rem;
+  border-radius: 50%;
+  color: white;
+  margin-block: 0.5rem;
+}
+
+form {
+  width: 100%;
+}
+
+.keep_logged {
+  display: flex;
+  justify-content: space-between;
+}
+
+.keep_logged div {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 14px;
+  flex: 1;
+}
+.keep_logged a {
+  color: gray;
+}
+
+.submit {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.signup {
+  border-radius: 3px;
+  color: #01afee;
+}

@@ -1,0 +1,104 @@
+body {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+}
+span {
+  color: red;
+}
+form {
+  width: 450px;
+  margin: 3rem auto 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #999;
+  border-radius: 3px;
+}
+
+legend {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 60%;
+  padding: 0.2rem;
+}
+fieldset > div {
+  width: 150px;
+}
+form > div {
+  display: flex;
+  justify-content: space-between;
+}
+label {
+  margin-inline: 0.5rem;
+}
+button {
+  margin-left: 0.5rem;
+  border: 1px solid #4a4aff;
+  background-color: white;
+  padding: 0.4rem 3rem;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #4a4aff;
+  transition: 0.1s ease-in-out;
+  margin: 0 auto;
+  font-size: inherit;
+}
+button:hover {
+  color: white;
+  background-color: #4a4aff;
+}
+.search {
+  text-align: center;
+}
+.search input {
+  width: 400px;
+  padding: 0.3rem;
+  border: 1px solid #999;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+
+.error,
+.error:active,
+.error:focus-visible {
+  border: 1px solid red;
+  outline: 1px solid red;
+}
+
+table {
+  width: 50%;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 0.8rem;
+  text-wrap: break-word;
+}
+th {
+  border-bottom: 1px solid red;
+  text-align: left;
+}
+td {
+  border-bottom: 1px solid #ddd;
+}
+tr {
+  margin-top: 0.5rem;
+}
+
+#newsType-error {
+  color: red;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.invisible {
+  visibility: hidden;
+}

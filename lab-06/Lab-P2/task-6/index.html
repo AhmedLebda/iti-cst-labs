@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>part-02: task-6</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <form action="./result.html">
+      <fieldset>
+        <legend>Your information</legend>
+        <div>
+          <label for="name">enter your name</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <div>
+          <label for="age">enter your age</label>
+          <input type="text" name="age" id="age" />
+        </div>
+      </fieldset>
+      <div>
+        <fieldset>
+          <legend>Select your gender</legend>
+          <input type="radio" name="gender" value="male" required />
+          <label for="male">male <img src="./male.png" alt="male" /></label>
+          <input type="radio" name="gender" value="female" required />
+          <label for="female"
+            >female <img src="./female.png" alt="female"
+          /></label>
+        </fieldset>
+      </div>
+
+      <div>
+        <fieldset>
+          <legend>Favorite Color</legend>
+          <label for="color">Select your favorite color</label>
+          <select name="color" id="color" required>
+            <option value="red">red</option>
+            <option value="blue">blue</option>
+            <option value="green">green</option>
+          </select>
+        </fieldset>
+      </div>
+
+      <button type="submit">register</button>
+    </form>
+  </body>
+</html>

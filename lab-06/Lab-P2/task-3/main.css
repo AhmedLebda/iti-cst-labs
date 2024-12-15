@@ -1,0 +1,32 @@
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  border-bottom: 2px solid pink;
+  padding-bottom: 1rem;
+}
+div {
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+}
+#mainwrapper {
+  width: 1000px;
+}
+#mainwrapper > div {
+  width: 600px;
+  margin-bottom: 20px;
+}
+img {
+  width: 400px;
+  height: 400px;
+}
+input {
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+}
+input:focus {
+  background-color: lightpink;
+  font-weight: bold;
+}

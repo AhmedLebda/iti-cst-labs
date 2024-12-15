@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 1</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="main_wrapper">
+      <h1>To Do Organizer</h1>
+      <form>
+        <div>
+          <input type="text" placeholder="Enter Task Name" id="taskInput" />
+          <button id="add" class="add_task">Add</button>
+        </div>
+      </form>
+      <div id="results" class="results">
+        <div class="results_header">
+          <p>Done</p>
+          <p class="task_area">Task</p>
+          <p>Delete</p>
+        </div>
+        <div id="tasksList" class="tasks_list"></div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Part-02: task-3</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div id="mainwrapper">
+      <h1>Slide Show Game</h1>
+      <div id="imagewrapper">
+        <img src="./UP/1.jpg" id="myImg" />
+      </div>
+      <div id="controlswrapper">
+        <input type="button" value="Start" onclick="startShow();" id="start" />
+        <input type="button" value="Next" onclick="next();" id="next" />
+        <input type="button" value="Prev" onclick="prev();" id="prev" />
+        <input
+          type="button"
+          value="Stop"
+          onclick="stopShow();"
+          id="stop"
+          disabled
+        />
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
