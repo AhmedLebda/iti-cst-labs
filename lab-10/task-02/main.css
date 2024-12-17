@@ -1,0 +1,22 @@
+#result {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+}
+
+.country-card {
+	border: 1px solid black;
+	width: 400px;
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+
+img {
+	max-width: 100%;
+}
+h1 {
+	text-align: center;
+	font-size: 4rem;
+	font-family: monospace;
+	color: #444;
+}
