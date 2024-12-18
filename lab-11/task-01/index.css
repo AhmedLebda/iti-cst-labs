@@ -1,0 +1,167 @@
+/*==============================
+General Styles
+==============================*/
+:root {
+	--main-padding: 1rem;
+	--header-bg: rgb(189, 166, 108);
+	--secondary-text: #333;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Arial, sans-serif;
+	min-height: 100vh;
+}
+li {
+	list-style-type: none;
+	text-transform: capitalize;
+}
+a {
+	text-decoration: none;
+	display: block;
+	color: inherit;
+}
+img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+button {
+	display: block;
+	color: inherit;
+	font-size: inherit;
+}
+h1,
+h2 {
+	text-transform: capitalize;
+}
+
+.main_container {
+	display: grid;
+
+	grid-template-columns: 300px 1fr;
+	grid-template-rows: auto 1fr 1fr 1fr;
+	grid-template-areas:
+		"aside header "
+		"aside photo_gallery"
+		"aside photo_gallery"
+		"aside photo_gallery";
+}
+
+/*==============================
+Header Styles
+==============================*/
+header {
+	grid-area: header;
+	background-color: var(--header-bg);
+	padding: var(--main-padding);
+}
+
+header ul {
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+	font-weight: bold;
+	color: white;
+	padding-inline: 1rem;
+}
+
+/*==============================
+Gallery Styles
+==============================*/
+.photo_gallery {
+	grid-area: photo_gallery;
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 241px);
+}
+.photo_gallery div {
+	overflow: hidden;
+}
+.photo_gallery img {
+	transition: transform 0.3s linear;
+}
+.photo_gallery img:hover {
+	transform: scale(1.1);
+}
+
+/*==============================
+Aside Styles
+==============================*/
+.aside {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding: var(--main-padding);
+
+	grid-area: aside;
+}
+
+.aside .logo {
+	font-size: 3rem;
+	text-align: center;
+	margin-bottom: 1rem;
+	letter-spacing: 0.5rem;
+}
+.aside nav ul {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	color: var(--secondary-text);
+	font-weight: bold;
+}
+
+.aside nav ul li:first-child {
+	color: black;
+}
+
+.aside_content,
+.aside_subTitle {
+	color: var(--secondary-text);
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+}
+.aside_subTitle {
+	border-bottom: 1px solid rgb(189, 166, 108);
+}
+.aside_photo_gallery div {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 95px);
+	gap: 0.5rem;
+}
+.aside_photo_gallery img {
+	border: 3px solid rgb(189, 166, 108);
+}
+
+/*============================== 
+==> Social icons component 
+==============================*/
+.social ul {
+	--bg-color: rgb(189, 166, 108);
+	--color: rgb(255, 255, 255);
+	--w-sm: 40px;
+
+	display: flex;
+	gap: 0.5rem;
+}
+.social ul li {
+	background-color: var(--bg-color);
+	color: var(--color);
+	font-weight: bold;
+	border-radius: 50%;
+	width: var(--w-sm);
+	aspect-ratio: 1;
+	display: grid;
+	place-items: center;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.social ul li:hover {
+	color: var(--bg-color);
+	background-color: var(--color);
+	border: 1px solid black;
+}

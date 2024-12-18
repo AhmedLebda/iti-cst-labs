@@ -1,0 +1,209 @@
+/*==============================
+General Styles
+==============================*/
+:root {
+	--footer-bg-color: #20232a;
+	--text-white: #fff;
+	--text-secondary: #999;
+	--space-2: 0.5rem;
+	--space-4: 1rem;
+	--space-6: 1.5rem;
+	--space-8: 2rem;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Arial, sans-serif;
+}
+li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	display: block;
+	color: inherit;
+}
+button {
+	display: block;
+	color: inherit;
+	font-size: inherit;
+}
+
+/*==============================
+Utility Classes 
+==============================*/
+.btn-main {
+	padding: 1rem 2rem;
+	outline: none;
+	border: none;
+	border-radius: 0.3rem;
+	background-color: rgb(80, 80, 255);
+	color: white;
+	font-weight: bold;
+	text-transform: capitalize;
+	cursor: pointer;
+}
+.btn-main:hover {
+	background-color: rgb(54, 54, 254);
+}
+
+/*==============================
+Intro Styles 
+==============================*/
+.intro {
+	height: 100vh;
+	background-image: url(images/laptop_top.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.intro > h1 {
+	font-family: monospace;
+	color: var(--text-white);
+	font-size: 4rem;
+	letter-spacing: 0.5rem;
+	margin-bottom: var(--space-6);
+}
+
+/*============================== 
+locations Section Styles 
+==============================*/
+.locations {
+	padding: var(--space-8);
+}
+
+.location_header {
+	text-align: center;
+	padding-block: var(--space-8);
+	margin-bottom: var(--space-8);
+	text-transform: capitalize;
+}
+
+.location_header h2 {
+	font-size: 3rem;
+	margin-bottom: var(--space-4);
+}
+.location_header span {
+	font-size: 0.9rem;
+	font-style: italic;
+	color: var(--text-secondary);
+}
+
+.location_list {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.map {
+	text-align: center;
+}
+
+.location_content {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+}
+
+.location_content ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+	margin-bottom: var(--space-6);
+}
+.location_content ul li {
+	list-style: none;
+	padding: var(--space-4);
+	border: 1px solid black;
+	font-weight: bold;
+	text-transform: capitalize;
+	border-radius: 5px;
+}
+.location_content ul li.selected {
+	background-color: var(--footer-bg-color);
+	color: var(--text-white);
+}
+.location_content_controls {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--space-2);
+}
+
+@media (min-width: 800px) {
+	.location_content {
+		grid-template-columns: 1fr 1fr;
+	}
+	.location_content_controls {
+		justify-content: flex-start;
+	}
+}
+
+/*============================== 
+Footer Styles 
+==============================*/
+footer {
+	background-color: var(--footer-bg-color);
+	color: var(--text-secondary);
+	padding: var(--space-4);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--space-4);
+}
+footer h3 {
+	color: var(--text-white);
+	margin-bottom: var(--space-4);
+}
+.contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.contact p:not(:last-child) {
+	margin-bottom: var(--space-2);
+}
+@media (min-width: 800px) {
+	footer {
+		flex-direction: row;
+		padding: var(--space-8);
+		justify-content: space-around;
+		align-items: flex-start;
+	}
+}
+
+/*============================== 
+==> Social icons component 
+==============================*/
+.social {
+	text-align: center;
+}
+.social ul {
+	--bg-color: #fff;
+	--color: rgb(60, 60, 60);
+	--w-sm: 40px;
+
+	display: flex;
+	gap: var(--space-4);
+}
+.social ul li {
+	background-color: var(--bg-color);
+	color: var(--color);
+	font-weight: bold;
+	border-radius: 50%;
+	width: var(--w-sm);
+	aspect-ratio: 1;
+	display: grid;
+	place-items: center;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.social ul li:hover {
+	color: var(--bg-color);
+	background-color: var(--color);
+}
